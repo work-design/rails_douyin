@@ -1,3 +1,4 @@
+require 'rails_com'
 module RailsDouyin
   class Engine < ::Rails::Engine
 

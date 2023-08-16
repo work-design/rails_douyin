@@ -5,7 +5,9 @@ Rails.application.routes.draw do
       resources :apps
 
       namespace :panel, defaults: { namespace: 'panel' } do
-        resources :apps
+        resources :apps do
+          resources :shops
+        end
       end
     end
 

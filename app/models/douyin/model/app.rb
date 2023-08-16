@@ -15,6 +15,9 @@ module Douyin
       attribute :open_id, :string
 
       belongs_to :organ, class_name: 'Org::Organ', optional: true
+
+      has_many :shops, primary_key: :appid, foreign_key: :appid
+      has_many :orders, primary_key: :appid, foreign_key: :appid
     end
 
     def oauth_url
