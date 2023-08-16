@@ -5,6 +5,7 @@ module Douyin
     extend ActiveSupport::Concern
 
     included do
+      attribute :name, :string
       attribute :appid, :string, index: true
       attribute :secret, :string
       attribute :access_token, :string

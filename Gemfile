@@ -1,14 +1,20 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
-# Specify your gem's dependencies in rails_douyin.gemspec.
 gemspec
 
-gem "puma"
+gem 'pg'
+gem 'puma'
+gem 'propshaft'
 
-gem "sqlite3"
+gem 'rails_com', github: 'work-design/rails_com'
+gem 'rails_org', github: 'work-design/rails_org'
+gem 'rails_design', github: 'work-design/rails_design'
+gem 'rails_extend', github: 'work-design/rails_extend'
 
-gem "sprockets-rails"
+group :development do
+  gem 'sdoc'
+end
 
-# Start debugger with binding.b [https://github.com/ruby/debug]
-# gem "debug", ">= 1.0.0"
+group :development, :test do
+  gem 'debug'
+end
