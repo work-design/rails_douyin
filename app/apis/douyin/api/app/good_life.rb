@@ -5,7 +5,8 @@ module Douyin::Api
     BASE = 'https://open.douyin.com/goodlife/v1/'
 
     def code_prepare(code)
-      get 'fulfilment/certificate/prepare/', params: { code: code }, origin: BASE
+      r = get 'fulfilment/certificate/prepare/', params: { code: code }, origin: BASE
+      r['data']
     end
 
   end
