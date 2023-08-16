@@ -13,7 +13,7 @@ module Douyin
 
       belongs_to :app, foreign_key: :appid, primary_key: :appid
 
-      has_many :orders, primary_key: :appid, foreign_key: :appid
+      has_many :orders, ->(o){ where(appid: o.appid) }, primary_key: :poi_id, foreign_key: :poi_id
     end
 
     def api

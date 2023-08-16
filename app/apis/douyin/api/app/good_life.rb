@@ -9,8 +9,15 @@ module Douyin::Api
       r['data']
     end
 
-    def code_verify(verify_token, poi_id)
-      r = post 'fulfilment/certificate/verify/', verify_token: verify_token, poi_id: poi_id, origin: BASE
+    def code_verify(verify_token:, poi_id:, encrypted_codes:, order_id:)
+      r = post(
+        'fulfilment/certificate/verify/',
+        verify_token: verify_token,
+        poi_id: poi_id,
+        encrypted_codes: encrypted_codes,
+        order_id: order_id,
+        origin: BASE
+      )
       r['data']
     end
 
