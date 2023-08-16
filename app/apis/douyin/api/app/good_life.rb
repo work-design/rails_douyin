@@ -9,6 +9,11 @@ module Douyin::Api
       r['data']
     end
 
+    def code_status(encrypted_code)
+      r = get 'fulfilment/certificate/get/', params: { encrypted_code: encrypted_code }, origin: BASE
+      r['data']
+    end
+
     def code_verify(verify_token:, poi_id:, encrypted_codes:, order_id:)
       r = post(
         'fulfilment/certificate/verify/',
