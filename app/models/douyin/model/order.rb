@@ -32,6 +32,15 @@ module Douyin
       r
     end
 
+    def code_cancel
+      verify_results.map do |result|
+        app.api.code_cancel(
+          verify_id: result['verify_id'],
+          certificate_id: result['certificate_id']
+        )
+      end
+    end
+
 
   end
 end

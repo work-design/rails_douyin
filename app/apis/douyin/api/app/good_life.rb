@@ -21,5 +21,10 @@ module Douyin::Api
       r['data']
     end
 
+    def code_cancel(verify_id:, certificate_id:)
+      r = post 'fulfilment/certificate/cancel/', verify_id: verify_id, certificate_id: certificate_id, origin: BASE
+      r['data']
+    end
+
   end
 end
