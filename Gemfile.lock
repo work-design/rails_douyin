@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 3f6f7bc52203dfc19d19036eef1611ab8fa253cd
+  revision: 527beb1d39b745ae02ccf75b8d7af169b790c496
   specs:
     rails_com (1.3.0)
       acme-client
@@ -11,27 +11,27 @@ GIT
       httpx
       kaminari
       net-http
-      rails (>= 7.0)
+      rails (~> 7.0)
       rails_extend
       turbo-rails
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: 388ece40348d16bcd0244d0c0764487ad0de9493
+  revision: ff4ff685e49c12693666a39a77efa8bd3cde59b6
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: 4d2bdbe16d66e9c1078e9e2ad17a7e9ca3f0c126
+  revision: 95b09550e37d56a7fbd1591bf495ead17cd34640
   specs:
     rails_extend (1.0.1)
       rails (>= 5.0)
 
 GIT
   remote: https://github.com/work-design/rails_org.git
-  revision: 0be006939fa0e752f0b04fed8205b4a36c5f6e48
+  revision: 2da58f4546281b6feb5a6b48d25c1762a9b64911
   specs:
     rails_org (0.0.1)
       rails_com (~> 1.2)
@@ -115,6 +115,7 @@ GEM
       tzinfo (~> 2.0)
     acts_as_list (1.1.0)
       activerecord (>= 4.2)
+    base64 (0.1.1)
     builder (3.2.4)
     closure_tree (7.4.0)
       activerecord (>= 4.2.10)
@@ -128,7 +129,8 @@ GEM
     default_where (2.2.0)
       activerecord (>= 4.0.0)
     erubi (1.12.0)
-    faraday (2.7.10)
+    faraday (2.7.11)
+      base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
@@ -138,7 +140,7 @@ GEM
       activesupport (>= 5.0)
     http-2-next (0.5.1)
     http-form_data (2.3.0)
-    httpx (0.24.3)
+    httpx (0.24.5)
       http-2-next (>= 0.4.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
