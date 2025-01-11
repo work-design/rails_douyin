@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Douyin::Api
-  class Base
+module Douyin
+  class BaseApi
     include CommonApi
   end
 end

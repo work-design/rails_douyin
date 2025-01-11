@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Douyin::Api
-  module App::GoodLife
+class Douyin::AppApi
+  module GoodLife
     BASE = 'https://open.douyin.com/goodlife/v1/'
 
     def code_prepare(code)

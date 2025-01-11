@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Douyin::Api
-  class App < Base
+module Douyin
+  class AppApi < BaseApi
     include Token
     include GoodLife
 

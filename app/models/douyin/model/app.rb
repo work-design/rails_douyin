@@ -48,7 +48,7 @@ module Douyin
 
     def api
       return @api if defined? @api
-      @api = Api::App.new(self)
+      @api = AppApi.new(self)
     end
 
   end

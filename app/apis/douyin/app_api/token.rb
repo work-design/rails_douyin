@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Douyin::Api
-  module App::Token
+class Douyin::AppApi
+  module Token
     BASE = 'https://open.douyin.com/oauth/'
 
     def token
