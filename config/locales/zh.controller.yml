@@ -4,6 +4,8 @@ zh:
     apps:
       login:
         title: 微信授权登录中
+    admin:
+      title: 抖音
     panel:
       title: 抖音平台
       home:
